@@ -206,7 +206,7 @@ public class XYZSpeech: NSObject,SFSpeechRecognizerDelegate {
     }
     
     
-    private func speechRecognizer(_ speechRecognizer: SFSpeechRecognizer, availabilityDidChange available: Bool) {
+    public func speechRecognizer(_ speechRecognizer: SFSpeechRecognizer, availabilityDidChange available: Bool) {
         if available {
             SpeechBTN?.isEnabled = true
         } else {
