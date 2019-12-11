@@ -8,13 +8,12 @@
 
 import UIKit
 import Speech
-//import SoHow
-
 
 public class XYZSpeech: NSObject,SFSpeechRecognizerDelegate {
     static var currentSTT : XYZSpeech?
-    
- 
+    enum SystemLanguageX:String {
+        case zh,en
+    }
     //调整语言
     
     static var SystemLanguage =  "zh-CN"
